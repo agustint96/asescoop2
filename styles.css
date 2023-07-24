@@ -1,0 +1,180 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para la sección de GIF de fondo */
+.gif-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gif-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image/asescoophero.jpg');
+  background-size: cover;
+  background-repeat: repeat; /* Repetir el GIF */
+  opacity: 0.7; /* Ajustar la opacidad según prefieras */
+}
+
+.flex-container {
+  display: flex; /* Mostrar los elementos uno al lado del otro */
+  justify-content: space-between; /* Separar los elementos con espacio entre ellos */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #238aa4;
+  background-color:#f9f3e7;
+  width: 90%; /* Limitar el ancho del contenedor principal */
+  opacity: 90%;
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 40px 40px 40px 40px;
+  font-size: 2.5rem;
+}
+
+p {
+  margin: 40px 40px 40px 40px;
+  font-size: 1.2rem;
+  
+}
+
+/******** EFECTOS BOTON ***********/
+p a{
+  background-color: ; /* Color celeste */
+  border: 2px solid #238aa4; /* Borde blanco de 2px */
+  color: #238aa4; /* Letras en blanco */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 18px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  border-radius: 5px; /* Redondear las esquinas */
+  text-decoration: none;
+}
+p a:hover{
+  
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+
+}
+
+p a:hover{
+  background-color: #238aa4;
+  color: #f9f3e7;
+  transition: all 0.7s ease-in-out;
+  padding: 10px 20px 10px 20px;
+}
+
+
+/*****************************************/
+
+
+
+/* Estilo para el video responsivo */
+.video-container {
+  max-width: 50%; /* Ancho máximo del video, puedes ajustarlo según tus necesidades */
+  margin: 40px 60px 40px 40px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  filter: grayscale(0);
+  opacity: 80%;
+}
+video:hover {
+  width: 100%;
+  height: auto;
+  filter: grayscale(0);
+  opacity: 90%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+/* Estilos para hacer la página responsiva */
+@media (max-width: 768px) {
+  /* Ajustar el tamaño de la fuente en dispositivos con ancho menor o igual a 768px */
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* Cambiar la disposición de los elementos a una columna en dispositivos más pequeños */
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .video-container {
+    margin-left: 40px 40px 40px;
+    max-width: 90%; /* El video ocupará todo el ancho en dispositivos más pequeños */
+    ; /* Añadir un espacio entre el texto y el video */
+  }
+}
+
+
+
+
+
+/********************* SECCION NAV ****************/
+
+.navbar-container, .dropdown-menu {
+    
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+  }
+.navbar-brand {
+  margin-right: auto;
+} 
+.navbar-brand img{
+  
+  width: 80px;
+}
+.navbar-nav {
+  
+    margin-left: 62%;
+}
+.nav-item{
+    margin: 0 10% 0 10%;
+}
+.nav-link{
+  background-image: linear-gradient(to right, #0353ac, #0353ac); /* establecer una imagen de gradiente de color azul */
+  background-position: bottom left; /* establecer la posición de la imagen en la parte inferior izquierda del enlace */
+  background-repeat: no-repeat; /* evitar que la imagen se repita */
+  background-size: 0% 2px; /* establecer el tamaño inicial de la imagen en 0% de ancho y 2 píxeles de altura */
+  transition: background-size 0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de tamaño de la imagen */
+  transition-delay: 0.1s; /* agregar un retraso de 0,5 segundos antes de que se inicie la transición */
+}
+.nav-link-custom:hover {
+    transition:  0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de color del borde inferior */
+    transition-delay: 0.1s;
+    background-size: 100% 2px; /* cambiar el tamaño de la imagen a 100% de ancho y 2 píxeles de altura cuando se hace hover */
+  }
+  .dropdown-item:hover{
+    background-color: #0353ac2d;
+  }
+  .dropdown-item-letter{
+    color: rgba(0, 0, 0, 0.604);
+  }
+
+
+
+
+
+
