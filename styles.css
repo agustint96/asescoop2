@@ -75,7 +75,7 @@ p a:hover{
 }
 
 
-/*****************************************/
+/*******************
 
 
 
@@ -99,79 +99,78 @@ video:hover {
   transition: all 0.5s ease-in-out;
 }
 
-
+/*
 
 /* Estilos para hacer la página responsiva */
-@media (max-width: 768px) {
-  /* Ajustar el tamaño de la fuente en dispositivos con ancho menor o igual a 768px */
-  h1 {
-    font-size: 2rem;
+
+/* Estilos para dispositivos con ancho de pantalla hasta 480px */
+@media (max-width: 480px) {
+  /* Agrega aquí los estilos específicos para dispositivos móviles o con ancho de pantalla de hasta 480px */
+  
+  body, html {
+    font-size: 14px; /* Ajustar el tamaño del texto para dispositivos móviles */
   }
 
-  p {
-    font-size: 1rem;
-  }
-
-  /* Cambiar la disposición de los elementos a una columna en dispositivos más pequeños */
   .flex-container {
     flex-direction: column;
+    align-items: center; /* Centrar los elementos en dispositivos móviles */
+    
   }
 
   .video-container {
-    margin-left: 40px 40px 40px;
-    max-width: 90%; /* El video ocupará todo el ancho en dispositivos más pequeños */
-    ; /* Añadir un espacio entre el texto y el video */
+    margin: 20px 0; /* Ajustar el margen para dispositivos móviles */
+    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
   }
-}
 
-
-
-
-
-/********************* SECCION NAV ****************/
-
-.navbar-container, .dropdown-menu {
+  .flex-container {
+    display: flex; /* Mostrar los elementos uno al lado del otro */
+    justify-content: space-between; /* Separar los elementos con espacio entre ellos */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #238aa4;
+    background-color:#f9f3e7;
+    width: 90%; /* Limitar el ancho del contenedor principal */
+    opacity: 90%;
+    box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  p a{
+    background-color: ; /* Color celeste */
+    border: 2px solid #238aa4; /* Borde blanco de 2px */
+    color: #238aa4; /* Letras en blanco */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    font-size: 10px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Redondear las esquinas */
+    text-decoration: none;
+  }
+  p a:hover{
     
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-.navbar {
-    
-    display: flex;
-    justify-content: space-between;
-  }
-.navbar-brand {
-  margin-right: auto;
-} 
-.navbar-brand img{
+    font-size: 10px;
+    transition: all 0.2s ease-in-out;
   
-  width: 80px;
-}
-.navbar-nav {
+  }
   
-    margin-left: 62%;
-}
-.nav-item{
-    margin: 0 10% 0 10%;
-}
-.nav-link{
-  background-image: linear-gradient(to right, #0353ac, #0353ac); /* establecer una imagen de gradiente de color azul */
-  background-position: bottom left; /* establecer la posición de la imagen en la parte inferior izquierda del enlace */
-  background-repeat: no-repeat; /* evitar que la imagen se repita */
-  background-size: 0% 2px; /* establecer el tamaño inicial de la imagen en 0% de ancho y 2 píxeles de altura */
-  transition: background-size 0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de tamaño de la imagen */
-  transition-delay: 0.1s; /* agregar un retraso de 0,5 segundos antes de que se inicie la transición */
-}
-.nav-link-custom:hover {
-    transition:  0.3s ease-out; /* establecer una transición suave de 0,3 segundos para el cambio de color del borde inferior */
-    transition-delay: 0.1s;
-    background-size: 100% 2px; /* cambiar el tamaño de la imagen a 100% de ancho y 2 píxeles de altura cuando se hace hover */
+  p a:hover{
+    background-color: #238aa4;
+    color: #f9f3e7;
+    transition: all 0.7s ease-in-out;
+    padding: 10px 20px 10px 20px;
   }
-  .dropdown-item:hover{
-    background-color: #0353ac2d;
-  }
-  .dropdown-item-letter{
-    color: rgba(0, 0, 0, 0.604);
-  }
+}
+
+  /* Personaliza otros estilos para dispositivos móviles */
+
+
+
 
 
 
