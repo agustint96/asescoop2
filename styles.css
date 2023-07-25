@@ -1,4 +1,5 @@
 body, html {
+  background-color: #EEE3CB;
   margin: 0;
   padding: 0;
 }
@@ -51,7 +52,7 @@ p {
 
 /******** EFECTOS BOTON ***********/
 p a{
-  background-color: ; /* Color celeste */
+  
   border: 2px solid #238aa4; /* Borde blanco de 2px */
   color: #238aa4; /* Letras en blanco */
   padding: 10px 20px; /* Espaciado interno del botón */
@@ -60,18 +61,17 @@ p a{
   border-radius: 5px;  /* Redondear las esquinas */
   text-decoration: none;
 }
-p a:hover{
-  
-  font-size: 20px;
-  transition: all 0.2s ease-in-out;
 
-}
 
 p a:hover{
   background-color: #238aa4;
   color: #f9f3e7;
   transition: all 0.7s ease-in-out;
   padding: 10px 20px 10px 20px;
+    
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .negrita{
@@ -84,19 +84,19 @@ p a:hover{
 
 
 
-/* Estilo para el video responsivo */
+/* Estilo para el Gif responsivo */
 .video-container {
   max-width: 50%; /* Ancho máximo del video, puedes ajustarlo según tus necesidades */
   margin: 40px 60px 40px 40px;
 }
 
-video {
+.video-hero {
   width: 100%;
   height: auto;
   filter: grayscale(0);
   opacity: 80%;
 }
-video:hover {
+.video-hero:hover {
   width: 100%;
   height: auto;
   filter: grayscale(0);
@@ -104,82 +104,7 @@ video:hover {
   transition: all 0.5s ease-in-out;
 }
 
-/*
 
-/* Estilos para hacer la página responsiva */
-
-/* Estilos para dispositivos con ancho de pantalla hasta 480px */
-@media (max-width: 480px) {
-  /* Agrega aquí los estilos específicos para dispositivos móviles o con ancho de pantalla de hasta 480px */
-  
-  body, html {
-    font-size: 14px; /* Ajustar el tamaño del texto para dispositivos móviles */
-  }
-
-  .flex-container {
-    flex-direction: column;
-    align-items: center; /* Centrar los elementos en dispositivos móviles */
-    
-  }
-
-  .video-container {
-    margin: 20px 0; /* Ajustar el margen para dispositivos móviles */
-    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
-  }
-
-  .flex-container {
-    display: flex; /* Mostrar los elementos uno al lado del otro */
-    justify-content: space-between; /* Separar los elementos con espacio entre ellos */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #238aa4;
-    background-color:#f9f3e7;
-    width: 90%; /* Limitar el ancho del contenedor principal */
-    opacity: 90%;
-    box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
-  }
-  p {
-    font-size: 0.9rem;
-  }
-  h1{
-    font-size: 2rem;
-  }
-  p a{
-    
-    background-color: ; /* Color celeste */
-    border: 1px solid #238aa4; /* Borde blanco de 2px */
-    color: #238aa4; /* Letras en blanco */
-    padding: 5px 10px; /* Espaciado interno del botón */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    border-radius: 5px; /* Redondear las esquinas */
-    text-decoration: none;
-  }
-  p a:hover{
-    
-    font-size: 18px;
-    transition: all 0.2s ease-in-out;
-    
-  }
-  
-  p a:hover{
-    background-color: #238aa4;
-    color: #f9f3e7;
-    transition: all 0.7s ease-in-out;
-    padding: 7px 12px 7px 12px;
-  }
-
-  .video-container {
-    margin: 10px 20px; /* Ajustar el margen para dispositivos móviles */
-    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
-  }
-
-}
-
-  /* Personaliza otros estilos para dispositivos móviles */
 
 
 
@@ -190,10 +115,20 @@ video:hover {
   /*******************************************************************/
   /*******************************************************************/
   /*******************************************************************/
+   /******* LOGO NAV          ********/
 
+
+.logo-asescoop{
+  opacity: 60%;
+}
+
+.logo-asescoop:hover{
+  opacity: 100%;
+}
   /************** NAV ****************/
 div.container-fluid{
-  background-color: #f9f3e7;
+  
+  background-color: #EEE3CB;
   margin: 0;
  
   
@@ -206,6 +141,7 @@ div.container-fluid{
 }
 
 .nav-link{
+  filter: brightness(100%);
   color: #238aa47e;
   margin-right:100px;
 }
@@ -231,10 +167,6 @@ div.container-fluid{
   background-color: #84a5ad2a;
   color: #238aa4;
 }
-
-
-
-
 
 
 
@@ -312,51 +244,90 @@ margin-top: 16px;
 transform: rotate(0deg);
 }  
 /***********************************************************************/
-/**********************************************************************/
-/**********************************************************************
+
 
 
 
               /** SECCION SOBRE NOSOTROS **/ 
+
+
+
+
+
+
+
+
+
+  /***********************************************************/
+  /***************      SECCION    **************************/
   /**********************************************************/
-  /**********************************************************/
+
+
 
 
 /* Estilos generales de la sección */
 #sobre-nosotros {
-  background-color: #f9f3e7;
+  opacity: 90%;
+  background-color: #EEE3CB;
+  
+  
+  
   height: 100vh; /* Altura del 100% del viewport */
   color: #654f44;
-  padding: 20px;
-  box-shadow: ;
+  padding: 34px;
+  
+  position: relative;
+  overflow: hidden;
 }
+
+.video-fondo {
+  opacity: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Esto asegura que el video esté detrás del contenido */
+}
+
+
+
 
 
 
 /* Aplicar Flexbox para colocar la imagen y el texto en línea */
-.titulo-seccion{
-  font-size: 2.5rem;
+.content-sobre-nosotros-titulo-seccion{
+  margin-top: 15%;
+  font-size: 2rem;
+}
+
+.content-sobre-nosotros-subtitulo-seccion{
+  color: #238aa47e;
+  font-size: 1.5rem;
 }
 .content-sobre-nosotros {
-  opacity: 90%;
+  opacity: 100%;
   height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
-  background-color: #bc8e6a40;
+  background-color: #EEE3CB;
 }
 
 /* Estilo de la imagen */
 .image {
   flex: 1;
-  padding: 10px;
+  padding: 40px;
 }
 
 /* Estilo del texto */
-.text {
+.content-sobre-nosotros-text {
+
   flex: 2;
-  padding: 10px;
+  margin: 0%;
+  
 }
 
 /* Ajustar la imagen para que sea responsiva */
@@ -366,18 +337,237 @@ img {
 }
 
 /* Estilo del título */
+
 h1 {
-  text-align: center;
-    margin-bottom: 20px;
-    color: #238aa4;
+  
+    
+    color: #238aa47e;
 }
 
+.content-sobre-nosotros-titulo-seccion{
+  
+  text-align: center;
+ 
+  color: #bb8d69;
+  ;
+}
+
+
+
+
 /* Estilo de los elementos de la lista */
+.content-sobre-nosotros-ul{
+  margin: 1%;
+  margin-bottom: 20%;
+}
 li {
+ list-style: none;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+
+/***********************************/
+/***** SERVICIOS *******************/
+
+.servicios {
+  box-shadow: 0 20px 25px -20px rgba(0, 0, 0, 0.5); ;
+  background-color: #B7C4CF;
+  padding: 20px;
+  text-align: center;
+}
+
+.servicios h1 {
+
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #bb8d69;
+}
+
+.servicios p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #654f44;
+}
+
+.servicios .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.servicios .imagen {
+  background-color:#EEE3CB;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+} .servicios .imagen:hover{
+  width: 255px;
+  height: 255px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.servicios .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.servicios .contenido {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #eee3cbbc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.servicios .contenido h2 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #238aa4;
+}
+
+.servicios .contenido p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+
+
+
+
+.body_formulario{
+  background-color: #EEE3CB;
+  
+  background-image: radial-gradient(#238aa4 0.5px, #EEE3CB 0.5px);
+  background-size: 10px 10px;
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.form{
+background-color: #EEE3CB;
+
+margin: auto;
+width: 90%;
+max-width: 400px;
+padding: 4.5em 3em;
+border-radius: 10px;
+box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+text-align: center;
+
+}
+.form_title{
+  font-size: 2rem;
+  margin-bottom: .5em;
+
+}
+.form_paragraph{
+  font-weight: 300;
+}
+
+.form_link{
+  font-weight: 400;
+  color: #000;
+
+}
+
+.form_container{
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+
+.form_group{
+  position: inherit;
+  --color: #5757577e
+}
+
+.form_input{
+  width: 100%;
+  background: none;
+  color:#706c6c ;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+
+.form_input:focus + .form_label, .form_input:not(:placeholder-shown) + .form_label{
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color: #3866f2;
+}
+
+.form_label{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  
+  left: 40%;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s ;
+}
+
+.form_submit{
+  background: #3866f2;
+  color: #B7C4CF;
+  font-weight: 300;
+  font-size:1rem ;
+  padding: .8em 0;
+  border-radius: .5em;
+}
+
+.form_line{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+}
+
+.form_input:focus ~ .form_line, .form_imput:not(:placeholder-shown) ~ .form_line{
+  transform: scale(1);
+} 
 
 
 
@@ -411,4 +601,136 @@ li {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+/*************** MEDIA QUERIES ***************************/
+/*******************************************************/
+/*******************************************************/
+
+
+
+@media (max-width: 480px) {
+  /* Agrega aquí los estilos específicos para dispositivos móviles o con ancho de pantalla de hasta 480px */
+  
+  body, html {
+    font-size: 14px; /* Ajustar el tamaño del texto para dispositivos móviles */
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos en dispositivos móviles */
+    
+  }
+
+  .video-container {
+    margin: 20px 0; /* Ajustar el margen para dispositivos móviles */
+    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
+  }
+
+  .flex-container {
+    display: flex; /* Mostrar los elementos uno al lado del otro */
+    justify-content: space-between; /* Separar los elementos con espacio entre ellos */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #238aa4;
+    background-color:#f9f3e7;
+    width: 90%; /* Limitar el ancho del contenedor principal */
+    opacity: 90%;
+    box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  p a{
+    
+    
+    border: 1px solid #238aa4; /* Borde blanco de 2px */
+    color: #238aa4; /* Letras en blanco */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Redondear las esquinas */
+    text-decoration: none;
+  }
+  p a:hover{
+    
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    
+  }
+  
+  p a:hover{
+    background-color: #238aa4;
+    color: #f9f3e7;
+    transition: all 0.7s ease-in-out;
+    padding: 7px 12px 7px 12px;
+  }
+
+  .video-container {
+    margin: 10px 20px; /* Ajustar el margen para dispositivos móviles */
+    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
+  }
+
+
+
+
+  .content-sobre-nosotros-text {
+    text-align: center;
+    color: aqua;
+    padding: 10%;
+    flex: 2;
+    margin: 10%;
+    
+    
+  }
+  
+  .content-sobre-nosotros-text ul li{
+    font-size: small;
+    padding: 10%;
+  }
+
+
+
+
+}
+
+  /* Personaliza otros estilos para dispositivos móviles */
 
