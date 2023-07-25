@@ -554,11 +554,16 @@ text-align: center;
   box-shadow: 1px 2px 4px #0000005a;
   
   background: #EEE3CB;;
-  color: #706c6c;;;
+  color: #B7C4CF;;;
   font-weight: 300;
   font-size:1rem ;
   padding: .8em 0;
   border-radius: .5em;
+  font-weight: bold;
+}
+.form_submit:hover{
+  margin-left: 51%;
+  transition: all 0.2s ease-in-out;
 }
 
 
