@@ -595,6 +595,7 @@ aside.navigation a:hover {
     font-size: 0.9rem;
   }
   h1 {
+      margin: 20px;
     font-size: 2rem;
   }
   p a {
@@ -623,18 +624,49 @@ aside.navigation a:hover {
     max-width: 100%; 
   }
 
+  .content-sobre-nosotros{
+    flex-direction: column;
+
+  }
+
   .content-sobre-nosotros-text {
+    
     text-align: center;
-    color: aqua;
-    padding: 10%;
+    color: #654f44;
+    padding: 17px;
     flex: 2;
-    margin: 10%;
+    margin: 20px;
+  }
+
+  .image {
+    margin-bottom: 0%;
+    padding-bottom: 0;
+    border: 0;
   }
 
   .content-sobre-nosotros-text ul li {
     font-size: small;
-    padding: 10%;
+    margin-bottom: 10px;
+    padding: 12px;
   }
+  .content-sobre-nosotros-titulo-seccion {
+    margin-top: -3%;
+    font-size: 2.rem;
+}
+
+
+.servicios p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #654f44;
+}
+.servicios h1 {
+  font-size: 34px;
+  margin-bottom: 19px;
+  color: #bb8d69;
+}
+
 }
 
 
