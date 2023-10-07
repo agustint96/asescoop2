@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AsesCoop - Asesoramiento legal a cooperativistas</title>
-    <link rel="shortcut icon" href="image/asescooplogo2.png" />
+    <link rel="shortcut icon" href="image/asescooplogo-contorno - copia.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,9 +25,11 @@
     />
     <script src="scroll.js"></script>
   </head>
+
+
   <body>
     <!--SECCION PRINCIPAL - HERO-->
-    <section class="gif-background">
+    <section id="section-1" class="gif-background">
       <div class="gif-overlay"></div>
       <div class="flex-container">
         <div class="content">
@@ -37,11 +39,9 @@
             cooperativas son organizaciones únicas con desafíos legales
             específicos. Por ello, nos enorgullecemos de brindar asesoramiento
             legal personalizado a consejeros, síndicos y asociados de
-            cooperativas. <br /><br /><br /><a
-              href="#section-2"
-              class="btn-conocer-mas flip-scale-up-hor"
-              >Conocer más</a
-            >
+            cooperativas. 
+            <br/><br>
+            <a href="#section-2" class="btn-conocer-mas flip-scale-up-hor">Conocer más</a>
           </p>
         </div>
         <div class="video-container">
@@ -60,11 +60,10 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
-            src="image/asescooplogo-contorno-celeste.png"
+            src="image/asescooplogo-contornovioleta.png"
             class="logo-asescoop animacion-scroll3"
             alt="Logo"
-            width="70px"
-            height="auto"
+            
             class="logo d-inline-block align-text-top"
           />
         </a>
@@ -106,37 +105,37 @@
 
     <section id="sobre-nosotros">
       <video autoplay loop muted playsinline class="video-fondo">
-        <source src="video/gentecaminando(1080p).mp4" type="video/mp4" />
+        <!-- <source src="video/gentecaminando(1080p).mp4" type="video/mp4" /> -->
        
       </video>
 
       <div class="content-sobre-nosotros">
         <div class="image">
-          <img
-            src="image/grupo-empresarios-diversos-asescoop (2).jpg"
+          <img class="sobre-nosotros-imagen"
+            src="image/sobre-nosotros-image.png"
             loading="lazy"
             alt="Imagen de ejemplo"
             class="animacion-scroll"
           />
         </div>
         <div class="content-sobre-nosotros-text animacion-scroll">
-          <h1 class="content-sobre-nosotros-titulo-seccion">Sobre Nosotros</h1>
+          <h1 class="content-sobre-nosotros-titulo-seccion titulo-subrayado">Sobre Nosotros</h1>
           <h1 class="content-sobre-nosotros-subtitulo-seccion">
-            ¿Por qué elegir nuestro asesoramiento legal para tu cooperativa?
+            ¿Por qué elegirnos?
           </h1>
           <ul class="content-sobre-nosotros-ul">
-            <li>
+            <li class="li-sobre-nosotros">
               <b>Experiencia en el sector:</b> Contamos con años de experiencia
               asesorando a cooperativas, lo que nos permite comprender a fondo
               sus necesidades y desafíos legales.
             </li>
-            <li>
+            <li class="li-sobre-nosotros">
               <b>Soluciones personalizadas:</b> Sabemos que cada cooperativa es
               única. Nuestro equipo de expertos en derecho cooperativo te
               proporcionará soluciones adaptadas a vuestras circunstancias
               particulares.
             </li>
-            <li>
+            <li class="li-sobre-nosotros">
               <b>Navegando juntos los desafíos legales:</b> Estamos aquí para
               ayudarte a enfrentar cualquier problema o pregunta legal que pueda
               surgir en el camino, permitiéndote tomar decisiones informadas y
@@ -147,15 +146,15 @@
       </div>
     </section>
 
-      <!-- Contenido de tu página aquí -->
-      <aside class="navigation">
-        <ul>
-          <li><a href="#section-2"><i class="fas fa-home"></i> Inicio</a></li>
-        </ul>
-      </aside>
       
-    <section id="servicios" class="servicios animacion-scroll2">
-      <h1>Servicios</h1>
+
+    <div class="barra-horizontal"></div>
+
+      
+    <section id="servicios" class="servicios seccion-2 ">
+      <div class="servicios-contenido animacion-scroll2">
+      <h1 class="titulo-subrayado">Servicios</h1>
+      <h1 class="subtitulo-servicios">Nuestro enfoque</h1>
       <p>
         Nuestro equipo legal altamente capacitado y especializado en
         cooperativas ofrece una amplia gama de servicios para ayudar a vuestra
@@ -195,7 +194,17 @@
         </div>
         
       </div>
+    </div>
     </section>
+    <!-- Contenido de tu página aquí -->
+    <aside class="navigation">
+      <ul>
+        <li><a href="#section-1"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#section-2"><i class="fa-solid fa-minus"></i> Sobre nosotros</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-minus"></i> Servicios</a></li>
+        
+      </ul>
+    </aside>
 
     <section id="contacto" class="body_formulario">
       
