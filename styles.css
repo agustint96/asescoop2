@@ -1,4 +1,4 @@
-* {
+body, html {
   margin: 0;
   padding: 0;
 }
@@ -17,81 +17,86 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("image/asescoophero.jpg");
+  background-image: url('image/asescoophero.jpg');
   background-size: cover;
-  background-repeat: repeat;
-  opacity: 0.7;
+  background-repeat: repeat; /* Repetir el GIF */
+  opacity: 0.7; /* Ajustar la opacidad según prefieras */
 }
 
 .flex-container {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Mostrar los elementos uno al lado del otro */
+  justify-content: space-between; /* Separar los elementos con espacio entre ellos */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #238aa4;
-  background-color: #efefef;
-  width: 90%;
+  background-color:#f9f3e7;
+  width: 90%; /* Limitar el ancho del contenedor principal */
   opacity: 90%;
   box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
 }
 
-.content h1 {
-  text-align: left;
+h1 {
   margin: 40px 40px 40px 40px;
   font-size: 2.5rem;
 }
 
-.content p {
-  text-align: left;
+p {
   margin: 40px 40px 40px 40px;
   font-size: 1.2rem;
+  
 }
 
 /******** EFECTOS BOTON ***********/
-p a {
-  border: 2px solid #238aa4;
-  color: #238aa4;
-  padding: 0.6em;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
+p a{
+  background-color: ; /* Color celeste */
+  border: 2px solid #238aa4; /* Borde blanco de 2px */
+  color: #238aa4; /* Letras en blanco */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 18px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  border-radius: 5px;  /* Redondear las esquinas */
   text-decoration: none;
 }
+p a:hover{
+  
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
 
-p a:hover {
+}
+
+p a:hover{
   background-color: #238aa4;
   color: #f9f3e7;
   transition: all 0.7s ease-in-out;
-  padding: 0.7em;
-  font-size: 20px;
-  transition: all 0.2s ease-in-out;
+  padding: 10px 20px 10px 20px;
 }
 
-.negrita {
-  color: #238aa4;
-  font-weight: bold;
+.negrita{
+  color:#238aa4;
+  font-weight: bold ;
 }
+
 
 /*******************
 
 
 
-/* Estilo para el Gif responsivo */
+/* Estilo para el video responsivo */
 .video-container {
-  max-width: 50%;
+  max-width: 50%; /* Ancho máximo del video, puedes ajustarlo según tus necesidades */
   margin: 40px 60px 40px 40px;
 }
 
-.video-hero {
+video {
   width: 100%;
   height: auto;
   filter: grayscale(0);
   opacity: 80%;
 }
-.video-hero:hover {
+video:hover {
   width: 100%;
   height: auto;
   filter: grayscale(0);
@@ -99,67 +104,149 @@ p a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-/***************** SECCION Y NAV ***********************************/
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-/******* LOGO NAV          ********/
+/*
 
-.logo-asescoop {
-  opacity: 80%;
-  width: 4rem;
-  height: auto;
+/* Estilos para hacer la página responsiva */
+
+/* Estilos para dispositivos con ancho de pantalla hasta 480px */
+@media (max-width: 480px) {
+  /* Agrega aquí los estilos específicos para dispositivos móviles o con ancho de pantalla de hasta 480px */
+  
+  body, html {
+    font-size: 14px; /* Ajustar el tamaño del texto para dispositivos móviles */
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos en dispositivos móviles */
+    
+  }
+
+  .video-container {
+    margin: 20px 0; /* Ajustar el margen para dispositivos móviles */
+    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
+  }
+
+  .flex-container {
+    display: flex; /* Mostrar los elementos uno al lado del otro */
+    justify-content: space-between; /* Separar los elementos con espacio entre ellos */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #238aa4;
+    background-color:#f9f3e7;
+    width: 90%; /* Limitar el ancho del contenedor principal */
+    opacity: 90%;
+    box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  p a{
+    
+    background-color: ; /* Color celeste */
+    border: 1px solid #238aa4; /* Borde blanco de 2px */
+    color: #238aa4; /* Letras en blanco */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Redondear las esquinas */
+    text-decoration: none;
+  }
+  p a:hover{
+    
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    
+  }
+  
+  p a:hover{
+    background-color: #238aa4;
+    color: #f9f3e7;
+    transition: all 0.7s ease-in-out;
+    padding: 7px 12px 7px 12px;
+  }
+
+  .video-container {
+    margin: 10px 20px; /* Ajustar el margen para dispositivos móviles */
+    max-width: 100%; /* El video ocupará todo el ancho en dispositivos móviles */
+  }
 
 }
 
-/************** NAV ****************/
-div.container-fluid {
-  background-color: #efefef;
+  /* Personaliza otros estilos para dispositivos móviles */
 
-  background-image: radial-gradient(#238aa4 0.5px, #efefef 0.5px);
-  background-attachment: fixed;
-  background-size: 10px 10px;
+
+
+
+
+  /***************** SECCION Y NAV ***********************************/
+  /*******************************************************************/
+  /*******************************************************************/
+  /*******************************************************************/
+  /*******************************************************************/
+
+  /************** NAV ****************/
+div.container-fluid{
+  background-color: #f9f3e7;
   margin: 0;
+ 
+  
 }
 
-.navbar.navbar-expand-lg.bg-body-tertiary {
+.navbar.navbar-expand-lg.bg-body-tertiary{
   padding-top: 0;
   padding-bottom: 0;
+  
 }
 
-.nav-link {
-  filter: brightness(100%);
+.nav-link{
   color: #238aa47e;
-  margin-right: 100px;
+  margin-right:100px;
 }
 
-.nav-link:hover {
+.nav-link:hover{
   color: #238aa4;
 }
 
-.navbar-nav {
-  margin-left: auto;
+.navbar-nav{
+ margin-left: auto;
 }
 
-.dropdown-menu {
-  background-color: #efefef;
+.dropdown-menu{
+  background-color: #f9f3e7;
 }
 
-.dropdown-item {
+.dropdown-item{
+  color: #238aa4;
+  
+}
+
+.dropdown-item:hover{
+  background-color: #84a5ad2a;
   color: #238aa4;
 }
 
-.dropdown-item:hover {
-  background-color: #628196;
-  color: #238aa4;
-}
+
+
+
+
+
+
+
+
+
 
 /************** hamburguesa nav ******************************/
 /***********************************************************/
 /*******************************************************/
 
-.navbar-toggler {
+.navbar-toggler{
   width: 20px;
   height: 20px;
   position: relative;
@@ -168,16 +255,16 @@ div.container-fluid {
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler-icon {
+.navbar-toggler-icon{
   outline: none;
   box-shadow: none;
   border: 0;
 }
-.navbar-toggler span {
+.navbar-toggler span{
   margin: 0;
   padding: 0;
 }
-.toggler-icon {
+.toggler-icon{
   display: block;
   position: absolute;
   height: 2px;
@@ -187,418 +274,141 @@ div.container-fluid {
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
+  transition: .25s ease-in-out;
 }
-.toggler-icon:hover {
+.toggler-icon:hover{
   background: #238aa48e;
 }
-.middle-bar {
+.middle-bar{
   margin-top: 0px;
+
 }
-.navbar-toggler .top-bar {
+.navbar-toggler .top-bar{
   margin-top: 0px;
   transform: rotate(135deg);
 }
-.navbar-toggler .middle-bar {
+.navbar-toggler .middle-bar{
   opacity: 0;
   filter: alpha(opacity=0);
 }
-.navbar-toggler .bottom-bar {
+.navbar-toggler .bottom-bar{
   margin-top: 0px;
   transform: rotate(-135deg);
+
 }
 /************** Cuando no esta clickeado *******************/
-.navbar-toggler.collapsed .top-bar {
-  margin-top: -16px;
-  transform: rotate(0deg);
+.navbar-toggler.collapsed .top-bar{
+margin-top: -16px;
+transform: rotate(0deg);
+
 }
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-  filter: alpha(opacity=100);
+.navbar-toggler.collapsed .middle-bar{
+opacity: 1;
+filter: alpha(opacity=100);
+
 }
-.navbar-toggler.collapsed .bottom-bar {
-  margin-top: 16px;
-  transform: rotate(0deg);
-}
+.navbar-toggler.collapsed .bottom-bar{
+margin-top: 16px;
+transform: rotate(0deg);
+}  
 /***********************************************************************/
+/**********************************************************************/
+/**********************************************************************
 
-/** SECCION SOBRE NOSOTROS **/
 
-/***********************************************************/
-/***************      SECCION    **************************/
-/**********************************************************/
 
+              /** SECCION SOBRE NOSOTROS **/ 
+  /**********************************************************/
+  /**********************************************************/
+
+
+/* Estilos generales de la sección */
 #sobre-nosotros {
-  opacity: 90%;
-  background-color: #c5d4e0;
-
-  height: 100vh;
- 
-  padding: 34px;
-
-  position: relative;
-  overflow: hidden;
+  background-color: #f9f3e7;
+  height: 100vh; /* Altura del 100% del viewport */
+  color: #654f44;
+  padding: 20px;
+  box-shadow: ;
 }
 
-.video-fondo {
-  opacity: 20%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
+
 
 /* Aplicar Flexbox para colocar la imagen y el texto en línea */
-.content-sobre-nosotros-titulo-seccion {
-  margin-top: 15%;
-  font-size: 2rem;
-  color: #628196;
-}
-
-.content-sobre-nosotros-subtitulo-seccion {
-  font-size: 42px;
-  color:#628196;
-  font-size: 1.5rem;
-  margin: 3% 7%;
+.titulo-seccion{
+  font-size: 2.5rem;
 }
 .content-sobre-nosotros {
-  margin: 1% 3%;
-  opacity: 100%;
+  opacity: 90%;
   height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5); */
-  background-color: #eef1f500;
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
+  background-color: #bc8e6a40;
 }
 
 /* Estilo de la imagen */
 .image {
   flex: 1;
-  padding: 40px;
+  padding: 10px;
 }
 
 /* Estilo del texto */
-.content-sobre-nosotros-text {
-
+.text {
   flex: 2;
-  margin: 2%;
+  padding: 10px;
 }
 
 /* Ajustar la imagen para que sea responsiva */
 img {
-  max-width: 180%;
+  max-width: 100%;
   height: auto;
-}
-.sobre-nosotros-imagen{
-  max-width: 185%;
 }
 
 /* Estilo del título */
-
 h1 {
-  color: #238aa47e;
-}
-
-.content-sobre-nosotros-titulo-seccion {
   text-align: center;
-
-  color: #628196;
+    margin-bottom: 20px;
+    color: #238aa4;
 }
 
 /* Estilo de los elementos de la lista */
-.content-sobre-nosotros-ul {
-  margin: 1%;
-  margin-bottom: 20%;
-  color: #333333;
-}
 li {
-  list-style: none;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.li-sobre-nosotros{
-  margin-bottom: 0% 0% 10% 5%;
-}
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.video-background video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-
-.barra-horizontal {
-  width: 100%;
-  height: 40%;
-  background-color: #eee3cb;
-
-  background-image: radial-gradient(#238aa4 0.5px, #eee3cb 0.5px);
-  background-attachment: fixed;
-
-  background-size: 10px 10px;
-}
 
 
 
-/***********************************/
-/***** SERVICIOS *******************/
 
-.servicios {
-  padding: 1% 3%;
-  /* box-shadow: 0 20px 25px -20px rgba(0, 0, 0, 0.5); */
-  background-color: #c5d4e0;
-  padding: 20px;
-  text-align: center;
-}
 
-.servicios h1 {
-  text-align: left;
-  font-size: 30px;
-  margin: 3% 3%;
-  color: #628196;
-}
 
- .titulo-subrayado {
-  font-size: 2rem;
-  margin: 3% 3%;
-  color: #628196;
-  position: relative;
-  display: inline-block;
-}
 
- .titulo-subrayado::before {
-  content: "";
-  position: absolute;
-  bottom: -0.5rem; /* Ajustamos la posición vertical del subrayado */
-  left: 0;
-  width: 30%; /* Ajustamos el ancho del subrayado (por ejemplo, el 50% del ancho del título) */
-  height: 3px;
-  background-color: #628196;
-}
 
-.servicios .subtitulo-servicios {
-  text-align: center;
-  font-size: 1.5rem;
-}
 
-.servicios p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 1% 12%;
-  color: #333333;
-}
 
-.servicios .imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  padding: 2%;
-}
 
-.servicios .imagen {
-  background-color: #eee3cb;
-  position: relative;
-  width: 250px;
-  height: 250px;
-  padding: 8px;
-  margin: 10px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-}
-.servicios .imagen:hover {
-  padding: 3px;
-  width: 253px;
-  height: 253px;
-  transition: all 0.4s ease-in-out;
-}
 
-.servicios .imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2px;
-}
 
-.servicios .contenido {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #eee3cbbc;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
 
-.servicios .contenido h2 {
-  font-size: 18px;
-  margin: 5px 0;
-  color: #238aa4;
-}
 
-.servicios .contenido p {
-  font-size: 14px;
-  margin: 5px 0;
-}
 
-/************ FORMULARIO **************/
 
-.body_formulario {
-  background-color: #eee3cb;
 
-  background-image: radial-gradient(#238aa4 0.5px, #eee3cb 0.5px);
-  background-attachment: fixed;
 
-  background-size: 10px 10px;
-  display: flex;
-  min-height: 100vh;
-}
 
-.form {
-  background-color: #b7c4cf;
 
-  margin: auto;
-  width: 90%;
-  max-width: 400px;
-  padding: 4.5em 3em;
-  border-radius: 10px;
-  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.form_title {
-  color: #eee3cb;
-  font-size: 2rem;
-  margin-bottom: 0.5em;
-}
-.form_paragraph {
-  font-weight: 300;
-}
 
-.form_link {
-  font-weight: 400;
-  color: #000;
-}
 
-.form_container {
-  margin-top: 3em;
-  display: grid;
-  gap: 2.5em;
-}
 
-.form_group {
-  position: inherit;
-  --color: #eee3cb;
-}
 
-.form_input {
-  width: 100%;
-  background: none;
-  color: #eee3cb;
-  font-size: 1rem;
-  padding: 0.6em 0.3em;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--color);
-}
 
-.form_input:focus + .form_label,
-.form_input:not(:placeholder-shown) + .form_label {
-  transform: translateY(-12px) scale(0.7);
-  transform-origin: left top;
-  color: #eee3cb;
-}
 
-.form_label {
-  color: var(--color);
-  cursor: pointer;
-  position: absolute;
 
-  left: 40%;
-  transform: translateY(10px);
-  transition: transform 0.5s, color 0.3s;
-}
 
-.form_submit {
-  margin-left: 50%;
-  justify-items: end;
-  width: 50%;
-  border: none;
-  box-shadow: 1px 2px 4px #0000005a;
 
-  background: #eee3cb;
 
-  color: #b7c4cf;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 0.8em 0;
-  border-radius: 0.5em;
-  font-weight: bold;
-}
-.form_submit:hover {
-  margin-left: 51%;
-  transition: all 0.2s ease-in-out;
-}
 
-.form_input:focus ~ .form_line,
-.form_imput:not(:placeholder-shown) ~ .form_line {
-  transform: scale(1);
-}
 
-/********** ASIDE **********/
 
-/* Estilo básico para el botón aside */
-aside.navigation {
-  display: none;
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  background-color: #00000000;
-  padding: 10px;
-  border-radius: 5px;
-}
 
-aside.navigation ul {
-  list-style: none;
-  padding: 0;
-}
-
-aside.navigation li {
-  margin-bottom: 5px;
-}
-
-aside.navigation a {
-  color: #b7c4cf;
-  text-decoration: none;
-  display: block;
-  padding: 5px;
-}
-
-aside.navigation a:hover {
-  color: #bb8d69;
-}
-
-/*
-
-/*************** MEDIA QUERIES ***************************/
-/*******************************************************/
-/*******************************************************/
