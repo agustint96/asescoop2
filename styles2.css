@@ -1,0 +1,177 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Add your custom styles below */
+/* Navigation bar styles */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-link {
+    color: #000 !important;
+}
+
+/* Section 1 styles */
+.gif-background {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.gif-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+}
+
+.btn-conocer-mas {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn-conocer-mas:hover {
+    background-color: #217dbb;
+}
+
+/* Video styles */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.video-hero {
+    width: 100%;
+}
+
+/* Section 2 (Sobre Nosotros) styles */
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.image {
+    flex: 1;
+}
+
+.sobre-nosotros-imagen {
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    color: #fff;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+}
+
+.btn-contacto {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.btn-contacto:hover {
+    background-color: #217dbb;
+}
+
+/* Section 3 (Servicios) styles */
+.servicio {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.servicio-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.servicio h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.servicio p {
+    color: #666;
+}
+
+/* Section 4 (Contacto) styles */
+.contacto-content {
+    text-align: center;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.contacto-content h2 {
+    font-size: 2.5rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Scroll reveal animations (use with scrollreveal.js) */
+.no-scrollreveal .content,
+.no-scrollreveal .servicio,
+.no-scrollreveal .contacto-content {
+    opacity: 1 !important;
+    transform: none !important;
+}

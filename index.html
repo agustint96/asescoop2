@@ -1,156 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AsesCoop - Asesoramiento legal a cooperativistas</title>
-    <link rel="shortcut icon" href="image/asescooplogo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/41e690e3f6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="contact-nav.js"></script>
-</head>
-<body>
-      <!--SECCION PRINCIPAL - HERO-->
-      <section class="gif-background">
-        <div class="gif-overlay"></div>
-        <div class="flex-container">
-          <div class="content">
-            <h1>Asesoramiento Legal Especializado para Cooperativas</h1>
-            <p>En <span class="negrita">AsesCoop</span> entendemos que las cooperativas son organizaciones únicas con desafíos legales específicos. Por ello, nos enorgullecemos de brindar asesoramiento legal personalizado a consejeros, síndicos y asociados de cooperativas.  
-            <br><br><br><a href="#section-2" class="btn-conocer-mas flip-scale-up-hor">Conocer más</a></p>
+    <link rel="shortcut icon" href="image/asescooplogo-contorno - copia.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scrollreveal.js"></script>
+    <script
+      src="https://kit.fontawesome.com/41e690e3f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scroll.js"></script>
+  </head>
 
-          </div>
-          <div class="video-container">
-            <video autoplay loop muted>
-              <source src="video/video (2160p).mp4" type="video/mp4">
-              <!-- Agrega aquí otros formatos de video para mayor compatibilidad -->
-            </video>
-          </div>
+
+  <body class="fondo-puntitos">
+    <!--SECCION PRINCIPAL - HERO-->
+    <section id="section-1" class="gif-background">
+      <div class="gif-overlay"></div>
+      <div class="flex-container">
+        <div class="content">
+          <h1>Asesoramiento Legal Especializado para Cooperativas</h1>
+          <p>
+            En <span class="negrita">AsesCoop</span> entendemos que las
+            cooperativas son organizaciones únicas con desafíos legales
+            específicos. Por ello, brindamos asesoramiento
+            legal personalizado a consejeros, síndicos y asociados de
+            cooperativas. 
+            <br/><br>
+            <a href="#section-2" class="btn-conocer-mas flip-scale-up-hor">Conocer más</a>
+          </p>
         </div>
-      </section>
-      <!---------------------------------->
-      
-      <!--SECCION NAV
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-container" id="section-2">
-        
-        <div class="container-fluid">
+        <div class="video-container">
+          <video autoplay loop muted class="video-hero">
+            <source src="video/video (2160p).mp4" type="video/mp4" />
             
-            <a class="navbar-brand" href="#hero">
-              <img id="imagen1" src="image/asescooplogo.png"  >
-              <img id="imagen2" src="image/asescooplogo-contorno.png"  >
-            </a>
-              
-            <button id="navbar-toggler" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span  class="toggler-icon top-bar"></span>
-              <span  class="toggler-icon middle-bar"></span>
-              <span  class="toggler-icon bottom-bar"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" aria-current="page" href="#hero">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="servicios-color">
-                    Servicios</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    
-                    <li><a class="dropdown-item dropdown-item-letter" href="#">Ley 20337</a></li>
-                    <li><a class="dropdown-item dropdown-item-letter" href="#">Resoluciones INAES</a></li>
-                    <li><a class="dropdown-item dropdown-item-letter" href="#">Estatutos sociales</a></li>
-                    <li><a class="dropdown-item dropdown-item-letter" href="#">Normas UIF</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          
+          </video>
         </div>
-          
-      </nav>
+      </div>
+    </section>
+    <!---------------------------------->
 
-
-    <!--------------------------------------------------------------------------->
-
-
-    
     <!--------------------------------------------------- Nav --------------------------------------------->
-<!----------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------->
-    
+    <!----------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="section-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="image/asescooplogo-contorno - copia.png"
+            class="logo-asescoop animacion-scroll3"
+            alt="Logo"
+            
+            class="logo d-inline-block align-text-top"
+          />
+        </a>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="section-2">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="image/asescooplogo-contorno-celeste.png" alt="Logo" width="70px" height="auto" class="d-inline-block align-text-top">
-      
-    </a>
-    
-    <button id="navbar-toggler" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span  class="toggler-icon top-bar"></span>
-      <span  class="toggler-icon middle-bar"></span>
-      <span  class="toggler-icon bottom-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#sobre-nosotros">Sobre nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Servicios</a>
-        </li>  
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
+        <button
+          id="navbar-toggler"
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#sobre-nosotros"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------->
+
+    <section id="sobre-nosotros">
+      <video autoplay loop muted playsinline class="video-fondo">
+        <!-- <source src="video/gentecaminando(1080p).mp4" type="video/mp4" /> -->
        
+      </video>
+
+      <div class="content-sobre-nosotros">
+        <div class="image">
+          <img class="sobre-nosotros-imagen"
+            src="image/sobre-nosotros-image.png"
+            loading="lazy"
+            alt="Imagen de ejemplo"
+            class="animacion-scroll"
+          />
+        </div>
+        <div class="content-sobre-nosotros-text animacion-scroll">
+          <h1 class="content-sobre-nosotros-titulo-seccion titulo-subrayado">Sobre Nosotros</h1>
+          <h1 class="content-sobre-nosotros-subtitulo-seccion">
+            ¿Por qué elegirnos?
+          </h1>
+          <ul class="content-sobre-nosotros-ul">
+            <li class="li-sobre-nosotros">
+              <b>Experiencia en el sector:</b> Contamos con años de experiencia
+              asesorando a cooperativas, lo que nos permite comprender a fondo
+              sus necesidades y desafíos legales.
+            </li>
+            <li class="li-sobre-nosotros">
+              <b>Soluciones personalizadas:</b> Sabemos que cada cooperativa es
+              única. Proporcionamos soluciones adaptadas a cada circunstancia particular, 
+              permitiendo tomar decisiones correctas 
+              y estratégicas en beneficio de las entidades.
+
+              
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+      
+
+    <div class="barra-horizontal"></div>
+
+      
+    <section id="servicios" class="servicios seccion-2 ">
+      <div class="servicios-contenido animacion-scroll2">
+      <h1 class="titulo-subrayado">Servicios</h1>
+      <h1 class="subtitulo-servicios">Nuestro enfoque</h1>
+      <p>
+        Nuestro equipo se encuentra capacitado para ofrecer a las Cooperativas los servicios que ayuden a 
+        dicha organización a alcanzar sus objetivos, 
+        de manera efectiva y legalmente sostenible. 
+
+        Te acompañamos en todo el proceso, desde la constitución inicial hasta el cumplimiento normativo, 
+        brindando el apoyo necesario en cada etapa. Entre nuestros servicios destacados se encuentran:
+      </p>
+      <div class="imagenes animacion-scroll2">
+        <div class="imagen">
+          <img src="image/Ley20337.jpg" loading="lazy" alt="Servicio 1" />
+          <div class="contenido">
+            <h2>Ley 20.337</h2>
+          </div>
+        </div>
+        <div class="imagen">
+          <img
+            src="image/ResolucionINAES.jpg"
+            loading="lazy"
+            alt="Servicio 2"
+          />
+          <div class="contenido">
+            <h2>Resoluciones INAES</h2>
+          </div>
+        </div>
+        <div class="imagen">
+          <img src="image/normasuif.jpg" loading="lazy" alt="Servicio 2" />
+          <div class="contenido">
+            <h2>Normas UIF</h2>
+          </div>
+        </div>
+        <div class="imagen">
+          <img src="image/estatutossociales.jpg" loading="lazy" alt="Servicio 2"/>
+          <div class="contenido">
+            <h2>Estatutos Sociales</h2>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </section>
+    <!-- Contenido de tu página aquí -->
+    <aside id="menuLateral" class="navigation">
+      <ul>
+        <li><a href="#section-1"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#section-2"><i class="fa-solid fa-minus"></i> Sobre nosotros</a></li>
+        <li><a href="#servicios"><i class="fa-solid fa-minus"></i> Servicios</a></li>
         
       </ul>
-    </div>
-  </div>
-</nav>
+    </aside>
 
-<!----------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------->
+    <section id="contacto" class="body_formulario">
+      
+      <form class="form">
+        <h2 class="form_title">Contactanos</h2>
+        <p class="form_paragraph"></p>
 
-<section id="sobre-nosotros">
+        <div class="form_container">
+          <div class="form_group">
+            <input type="text" id="name" class="form_input" placeholder=" " />
+            <label for="name" class="form_label">Nombre:</label>
+            <span class="form_line"></span>
+          </div>
 
-<div class="content-sobre-nosotros">
- 
-  
-  <div class="image">
+          <div class="form_group">
+            <input type="text" id="correo" class="form_input" placeholder=" " />
+            <label for="correo" class="form_label">Correo:</label>
+            <span class="form_line"></span>
+          </div>
 
-    <img src="image/meeting.jpg" alt="Imagen de ejemplo">
-  </div>
-  <div class="text">
-    <h1 class="titulo-seccion">Sobre Nosotros</h1>
-    <h1>¿Por qué elegir nuestro asesoramiento legal para tu cooperativa?</h1>
-    <ul>
-      <li>
-        Experiencia en el sector: Contamos con años de experiencia asesorando a cooperativas, lo que nos permite comprender a fondo sus necesidades y desafíos legales.
-      </li>
-      <li>
-        Soluciones personalizadas: Sabemos que cada cooperativa es única. Nuestro equipo de expertos en derecho cooperativo te proporcionará soluciones adaptadas a vuestras circunstancias particulares.
-      </li>
-      <li>
-        Navegando juntos los desafíos legales: Estamos aquí para ayudarte a enfrentar cualquier problema o pregunta legal que pueda surgir en el camino, permitiéndote tomar decisiones informadas y estratégicas.
-      </li>
-    </ul>
-  </div>
-</div>
-</section>
+          <div class="form_group">
+            <input type="text" id="mensaje" class="form_input" placeholder=" "/>
+            <label for="mensaje" class="form_label">Mensaje:</label>
+            <span class="form_line"></span>
+          </div>
+          <input type="submit" class="form_submit" value="Enviar" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="piedepagina" id="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-text">
+                  <p class="footer-paragraph">Asescoop - Asesoramiento legal a Cooperativas - Profesionales Dario Tardella & Asoc.</p>
+                  
+              </div>
+              <div class="contact-info">
+                  <p class="footer-paragraph"><b>Correo Electrónico: asescoop@gmail.com</b></p>
+                  <p class="footer-paragraph"><b>Teléfono: +54 3516741687</b></p>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p class="footer-copyright">Asescoop - Todos los derechos reservados &copy; 2023</p>
+          </div>
+      </div>
+
+
+   
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
- 
-</body>
+    <script src="scroleamos.js"></script>
+  </body>
 </html>
